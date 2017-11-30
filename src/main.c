@@ -8,6 +8,17 @@ int main() {
 
   for (int i=0; i<n; i++) {
     /* Imprime resultado da n-esima iteracao do scheduler */
+	int aux = 0;
+	for (int j = 0; j<5; j++) {
+		if ((i+1)%a[j] == 0) {
+			printf("%d", j);
+			aux++;
+		}
+	}
+	if (aux == 0)
+		printf("-\n");
+	else
+		printf("\n");
   }
 
   return 0;
